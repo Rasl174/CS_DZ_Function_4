@@ -26,7 +26,7 @@ namespace CS_DZ_Function_4
                 {
                     ConsoleKeyInfo key = Console.ReadKey(true);
 
-                    DirectionMove(key, ref playerDX, ref playerDY);
+                    MoveDirection(key, ref playerDX, ref playerDY);
 
                     if (map[playerX + playerDX, playerY + playerDY] != '#')
                     {
@@ -44,7 +44,7 @@ namespace CS_DZ_Function_4
             }
         }
 
-        static void DirectionMove(ConsoleKeyInfo key, ref int DX, ref int DY)
+        static void MoveDirection(ConsoleKeyInfo key, ref int DX, ref int DY)
         {
             switch (key.Key)
             {
